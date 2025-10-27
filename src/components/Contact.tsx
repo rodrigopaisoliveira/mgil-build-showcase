@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, Facebook, MapPin } from "lucide-react";
+import { Phone, Facebook, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -17,8 +17,8 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Simple validation
+
+    // Validação simples
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Erro",
@@ -28,18 +28,30 @@ const Contact = () => {
       return;
     }
 
-    // Here you would typically send the data to a backend
-    toast({
-      title: "Mensagem Enviada!",
-      description: "Entraremos em contacto consigo brevemente.",
-    });
+    // Construir o mailto
+    const emailTo = "teuemail@dominio.com"; // <-- substitui pelo email de destino
+    const subject = encodeURIComponent("Pedido de Orçamento - Website");
+    const body = encodeURIComponent(
+      `Olá,
 
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
+O meu nome é ${formData.name} (${formData.email}${
+        formData.phone ? ", telemóvel: " + formData.phone : ""
+      }).
+
+Mensagem:
+${formData.message}
+
+Cumprimentos,
+${formData.name}`
+    );
+
+    // Abrir o cliente de email
+    window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
+
+    // Feedback ao utilizador
+    toast({
+      title: "A abrir o cliente de email...",
+      description: "Se não abrir automaticamente, verifique o seu gestor de email.",
     });
   };
 
@@ -96,7 +108,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Facebook</h4>
                     <a
-                      href="https://www.facebook.com/marcogilconstrucoes"
+                      href="https://www.facebook.com/marco.gil.564/?locale=pt_PT"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-gold transition-smooth"
@@ -127,7 +139,7 @@ const Contact = () => {
           <div>
             <Card className="p-8 border-0 shadow-elegant">
               <h3 className="text-2xl font-bold text-primary mb-6">
-                Envie-nos uma Mensagem
+                Solicitar Orçamento
               </h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
@@ -190,7 +202,7 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-gold hover:bg-gold-dark text-primary font-semibold shadow-gold transition-smooth"
+                  className="w-full bg-gold hover:bg-gold-dark text-primary font-semibold shadow-gold transition-smooth rounded-xl"
                   size="lg"
                 >
                   Enviar Mensagem

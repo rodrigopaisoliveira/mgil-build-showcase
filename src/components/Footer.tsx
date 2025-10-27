@@ -39,7 +39,7 @@ const Footer = () => {
                 <span>925 461 902</span>
               </a>
               <a
-                href="https://www.facebook.com/marcogilconstrucoes"
+                href="https://www.facebook.com/marco.gil.564/?locale=pt_PT"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-white/80 hover:text-gold transition-smooth"

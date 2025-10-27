@@ -37,14 +37,15 @@ const Hero = () => {
               Peça o seu Orçamento
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button
-              onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-lg px-8 transition-smooth"
-            >
-              Ver Serviços
-            </Button>
+            <Button 
+            onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+            size="lg"
+            className="bg-white text-primary border-2 border-white hover:bg-transparent hover:text-white font-semibold text-lg px-8 transition-all duration-300"
+          >
+            Ver Serviços
+          </Button>
+
+
           </div>
         </div>
       </div>
