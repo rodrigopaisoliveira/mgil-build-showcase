@@ -40,7 +40,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("home")}
             className="text-2xl font-bold flex items-center space-x-1 focus:outline-none"
           >
-            <span className="text-primary">MGil</span>
+            <span className="text-primary">MFGIL</span>
             <span className="text-gold"> Construções</span>
           </button>
         </div>

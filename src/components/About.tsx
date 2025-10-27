@@ -25,12 +25,12 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Sobre a <span className="text-gold">MGil Construções</span>
+              Sobre a <span className="text-gold">MFGIL Construções</span>
             </h2>
             <p className="text-lg text-foreground leading-relaxed mb-8">
               Somos uma empresa especializada em serviços de construção e remodelação, 
               dedicada a proporcionar soluções de qualidade superior aos nossos clientes. 
-              Com anos de experiência no mercado, a MGil Construções estabeleceu-se como 
+              Com anos de experiência no mercado, a MFGIL Construções estabeleceu-se como 
               uma referência em profissionalismo, confiança e atenção ao detalhe.
             </p>
             <p className="text-lg text-foreground leading-relaxed">

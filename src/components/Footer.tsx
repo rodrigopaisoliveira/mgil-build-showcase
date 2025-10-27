@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="text-2xl font-bold mb-4">
-              <span className="text-white">MGil</span>
+              <span className="text-white">MFGIL</span>
               <span className="text-gold"> Construções</span>
             </div>
             <p className="text-white/80 leading-relaxed">
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-white/60">
-          <p>&copy; {currentYear} MGil Construções. Todos os direitos reservados.</p>
+          <p>&copy; {currentYear} MFGIL Construções. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
