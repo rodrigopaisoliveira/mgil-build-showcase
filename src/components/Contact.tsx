@@ -205,7 +205,7 @@ ${formData.name}`
                   className="w-full bg-gold hover:bg-gold-dark text-primary font-semibold shadow-gold transition-smooth rounded-xl"
                   size="lg"
                 >
-                  Enviar Mensagem
+                  Solicitar Orçamento
                 </Button>
               </form>
             </Card>
