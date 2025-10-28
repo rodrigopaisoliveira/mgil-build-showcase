@@ -29,7 +29,7 @@ const Contact = () => {
     }
 
     // Construir o mailto
-    const emailTo = "teuemail@dominio.com"; // <-- substitui pelo email de destino
+    const emailTo = "mfgilconstrucoes@gmail.com"; // <-- substitui pelo email de destino
     const subject = encodeURIComponent("Pedido de Orçamento - Website");
     const body = encodeURIComponent(
       `Olá,
