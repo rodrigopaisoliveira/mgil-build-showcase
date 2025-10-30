@@ -85,7 +85,7 @@ const Navbar = () => {
             <div className="md:hidden flex items-center space-x-4">
               {/* Botão para Ligar */}
               <button
-                onClick={() => window.open("tel:925461902")}
+                onClick={() => (window.location.href = "tel:925461902")}
                 className="px-3 py-2 bg-gold hover:bg-gold-dark text-primary font-semibold shadow-gold rounded-xl transition-all duration-300"
                 aria-label="Ligar agora"
               >
