@@ -141,15 +141,15 @@ const Navbar = () => {
             >
               Contacto
             </button>
-            <div className="px-4">
+          <div className="px-4">
             <a
-              href="tel:+351925461902"
-              className="w-full bg-gold hover:bg-gold-dark text-primary font-semibold shadow-gold flex items-center justify-center py-2 rounded"
+              href="tel:925461902"
+              className="block text-center bg-gold hover:bg-gold-dark text-primary font-semibold shadow-gold rounded py-2 flex items-center justify-center space-x-2 transition-smooth"
             >
-              <Phone className="w-4 h-4 mr-2" />
-              925 461 902
+              <Phone className="w-4 h-4" />
+              <span>925 461 902</span>
             </a>
-            </div>
+          </div>
           </div>
         </div>
       )}
